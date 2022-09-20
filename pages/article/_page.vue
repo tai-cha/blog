@@ -18,12 +18,16 @@
 <script>
 export default {
   head()  {
-    return {
+    const head = {
       title: `${this.article.title} | taichanブログ`,
       meta: [
         { hid: 'description', name: 'description', content: this.article.description }
       ]
     }
+    if (this.article.noindex) {
+      head.meta.push({ hid: "robots", name: "robots", content: "noindex" })
+    }
+    return head
   },
   async asyncData({ params, $microcms }) {
     const data = {};
