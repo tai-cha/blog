@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/page/1914", (function(a){return {data:[{contents:[],totalCount:3,offset:1913,limit:1,page:"1914",tagId:a,tag:a}],fetch:{},mutations:void 0}}(null)));
