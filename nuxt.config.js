@@ -64,7 +64,7 @@ export default {
 
       // 一覧のページング
       const pages = await axios
-        .get(`https://${domain}.microcms.io/api/v1/article?limit=0`, {
+        .get(`https://${domain}.microcms.io/api/v1/article?limit=0&filters=isHidden[equals]false`, {
           headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY },
         })
         .then((res) =>
@@ -87,7 +87,7 @@ export default {
       const tagPages = await Promise.all(
         tags.map((tag) =>
           axios.get(
-            `https://${domain}.microcms.io/api/v1/article?limit=0&filters=tags[contains]${tag}`,
+            `https://${domain}.microcms.io/api/v1/article?limit=0&filters=isHidden[equals]false[and]tags[contains]${tag}`,
             { headers: { 'X-API-KEY': process.env.MICROCMS_API_KEY } }
           )
           .then((res) =>

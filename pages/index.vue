@@ -33,9 +33,10 @@ export default {
     const tagId = params.tagId || null;
     const queries = {
       offset: (page - 1) *  PAR_PAGE,
-      limit: PAR_PAGE
+      limit: PAR_PAGE,
+      filters: "isHidden[equals]false"
     }
-    if (tagId !== null) queries.filters = `tags[contains]${tagId}`;
+    if (tagId !== null) queries.filters += `[and]tags[contains]${tagId}`;
     const data = await $microcms.get({
       endpoint: 'article',
       queries

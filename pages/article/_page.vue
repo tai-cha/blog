@@ -9,6 +9,7 @@
       <div class="tags">
         タグ:
         <Tag v-for="t in article.tags" :id="t.id" :key="`tag-${t.id}`" :name="t.name" />
+        <span v-if="article.tags.length < 1">なし</span>
       </div>
     </main>
   </div>
