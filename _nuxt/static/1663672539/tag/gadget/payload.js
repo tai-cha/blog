@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tag/gadget", (function(a,b,c,d){return {data:[{contents:[],totalCount:a,offset:a,limit:1,page:"1",tagId:b,tag:{id:b,createdAt:c,updatedAt:d,publishedAt:c,revisedAt:d,parent:null,name:"ガジェット"}}],fetch:{},mutations:void 0}}(0,"gadget","2021-09-07T19:22:58.044Z","2021-09-07T19:23:06.314Z")));

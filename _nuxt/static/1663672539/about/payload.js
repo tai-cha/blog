@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/about", (function(a){return {data:[{article:{id:"about",createdAt:"2022-09-20T02:22:24.938Z",updatedAt:a,publishedAt:"2022-09-20T02:22:36.859Z",revisedAt:a,title:"taichanブログについて",tags:[],body:"\u003Cp\u003E工事中\u003C\u002Fp\u003E",noindex:false,isHidden:true}}],fetch:{},mutations:void 0}}("2022-09-20T10:13:08.795Z")));
