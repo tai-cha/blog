@@ -68,6 +68,7 @@ export default {
   &__list {
     list-style: none;
     margin: 0 0 16px 0;
+    padding-left: 30px;
     &-item {
       line-height: 1.8;
       padding-left: 12px;

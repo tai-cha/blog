@@ -52,21 +52,62 @@ export default {
     }
     &__details {
       display: flex;
+      height: 100%;
       flex-direction: column;
       flex-grow: 1;
     }
     &__title {
-      margin: 0 0;
       font-size: 18px;
+      line-height: 1;
+      margin: 0 0;
     }
     &__description {
-      font-size: 16px;
+      font-size: 12px;
       flex-grow: 1;
+      margin-top: 6px;
     }
     &__bottom {
+      align-items: bottom;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      margin-top: 12px;
+    }
+    &__date {
+      align-items: flex-end;
+      display: flex;
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    .article {
+    
+      &__image-container {
+        height: 90px;
+        margin-right: 20px;
+        min-width: 90px;
+        width: 90px;
+      }
+
+      &__description {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      
+      &__bottom {
+        flex-direction: column;
+
+        .tags {
+          align-self: flex-start;
+        }
+      }
+
+      &__date {
+        align-self: flex-end;
+      }
     }
   }
 </style>

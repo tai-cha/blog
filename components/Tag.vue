@@ -33,4 +33,9 @@ export default {
     text-decoration: none;
   }
 }
+@media screen and (max-width: 980px) {
+  .tag {
+    font-size: 12px;
+  }
+}
 </style>
