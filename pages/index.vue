@@ -22,7 +22,7 @@
 </template>
 
 <script>
-const PAR_PAGE = 1;
+const PAR_PAGE = 10;
 export default {
   directives: {
     'visible': {
